@@ -36,7 +36,7 @@ export const listAlbumCategorys = /* GraphQL */ `
       items {
         id
         title
-        albums {
+        albums {    
           nextToken
           items {
             id
@@ -95,7 +95,7 @@ export const listAlbums = /* GraphQL */ `
     $limit: Int
     $nextToken: String
   ) {
-    listAlbums(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listAlbums(filter: $filter, limit: $limit, nextToken: $nextToken ,order_by: {items.name: desc}) {
       items {
         id
         name

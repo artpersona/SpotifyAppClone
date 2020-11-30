@@ -54,9 +54,12 @@ const PlayerWidget = () => {
 
     useEffect(() => {
         if(song){
+            async () => {
+                await sound.stopAsync();
+            }
             playCurrentSong();
         }
-    },[])
+    },[song])
 
 
     const onPlayPausePress = async () => {

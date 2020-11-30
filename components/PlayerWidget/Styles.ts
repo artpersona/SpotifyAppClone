@@ -32,9 +32,18 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         height: 60,
         justifyContent: "space-around",
-        alignItems: 'center'
-        
+        alignItems: 'center',
+        maxWidth:'60%',
+
     },
+
+    icon_container:{
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-around',
+        width:100
+    },
+
     song_cover:{
         width:75,
         height: 75,
@@ -50,13 +59,6 @@ const styles = StyleSheet.create({
         color: 'lightgray',
         fontSize: 17
     },
-
-    icon_container:{
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-around',
-        width:100
-    }
 })
 
 export default styles;
